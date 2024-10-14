@@ -10,11 +10,11 @@ export default function FilmeDetalhes({ route }) {
         <ScrollView contentContainerStyle={styles.container}>
             <Text style={styles.titulo}>Detalhes do filme</Text>
             {filme && <Image source={filme.image} style={styles.image} />}
-            <Text style={styles.nome}>{filme?.nome || 'No Title'}</Text>
-            <Text style={styles.sinopse}>Sinopse: {filme?.sinopse || 'No Synopsis'}</Text>
-            <Text style={styles.duracao}>Duração: {filme?.duracao || 'Unknown'}</Text>
-            <Text style={styles.genero}>{filme?.genero || 'Unknown'}</Text>
-            <Text style={styles.pais}>País de Origem: {filme?.pais || 'Unknown'}</Text>
+            <Text style={styles.nome}>{filme.nome}</Text>
+            <Text style={styles.sinopse}>Sinopse: {filme.sinopse }</Text>
+            <Text style={styles.duracao}>Duração: {filme.duracao }</Text>
+            <Text style={styles.genero}>{filme.genero}</Text>
+            <Text style={styles.pais}>País de Origem: {filme.pais}</Text>
         </ScrollView>
     );
 }
